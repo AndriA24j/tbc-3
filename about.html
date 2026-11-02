@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn more about Andria Dididze, a young front-end developer from Georgia."
+    />
+    <title>About Me | Andria Dididze - Junior Front-End Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11/dist/index.global.js"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-display:
+          "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+        --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+        --color-paper: #faf7f2;
+        --color-ink: #1c1b18;
+        --color-accent: #e0501b;
+        --color-accent-deep: #b43a0d;
+        --color-accent-soft: #fde9dd;
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-paper font-sans text-ink antialiased selection:bg-accent selection:text-white"
+  >
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"
+      >Skip to content</a
+    >
+
+    <header
+      class="border-b border-ink/10 bg-paper/90 backdrop-blur sticky top-0 z-40"
+    >
+      <div
+        class="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6"
+      >
+        <div class="flex items-baseline gap-3">
+          <h1 class="font-display text-xl font-extrabold tracking-tight">
+            Andria Dididze
+          </h1>
+          <p class="text-sm text-ink/60">
+            <span
+              class="mr-2 inline-block size-1.5 rounded-full bg-accent align-middle"
+            ></span
+            >Junior Front-End Developer
+          </p>
+        </div>
+        <nav
+          id="site-nav"
+          class="mt-3 hidden md:mt-0 md:block"
+          aria-label="Main navigation"
+        >
+          <ul class="flex flex-col gap-1 md:flex-row md:flex-wrap">
+            <li>
+              <a
+                href="index.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors bg-ink text-paper"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors text-ink/75 hover:bg-ink/5 hover:text-ink"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors text-ink/75 hover:bg-ink/5 hover:text-ink"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors text-ink/75 hover:bg-ink/5 hover:text-ink"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main
+      id="main"
+      class="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-6 sm:py-14"
+    >
+      <h2
+        class="font-display text-4xl font-extrabold tracking-tight sm:text-5xl"
+      >
+        About Me
+      </h2>
+
+      <section
+        id="introduction"
+        class="mt-10 grid gap-6 md:grid-cols-[13rem_1fr] md:gap-10"
+      >
+        <h3 class="font-display text-2xl font-bold tracking-tight">Who I Am</h3>
+        <div class="space-y-4 text-lg leading-relaxed text-ink/80">
+          <p>
+            I am <strong class="font-semibold text-ink">Andria Dididze</strong>,
+            a young developer from Georgia with a strong interest in building
+            for the web. I enjoy the moment when a few lines of code turn into
+            something people can see, click and use.
+          </p>
+          <p>
+            I am at the beginning of my professional journey, and I approach
+            every project with curiosity, patience and a willingness to learn.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="interests"
+        class="mt-14 grid gap-6 border-t border-ink/10 pt-10 md:grid-cols-[13rem_1fr] md:gap-10"
+      >
+        <h3 class="font-display text-2xl font-bold tracking-tight">
+          What I Am Interested In
+        </h3>
+        <div class="grid gap-4 lg:grid-cols-1">
+          <article
+            class="rounded-2xl border border-ink/10 bg-white p-6 shadow-sm"
+          >
+            <h4 class="font-display text-lg font-bold">
+              Front-End Development
+            </h4>
+            <p class="mt-2 text-ink/70">
+              I am most interested in the part of the web that people see and
+              interact with. I care about clean structure, readable code,
+              accessibility and a smooth user experience.
+            </p>
+          </article>
+          <article
+            class="rounded-2xl border border-ink/10 bg-white p-6 shadow-sm"
+          >
+            <h4 class="font-display text-lg font-bold">
+              Learning New Technologies
+            </h4>
+            <p class="mt-2 text-ink/70">
+              Web technologies change quickly, and I enjoy keeping up. I
+              regularly explore new tools, frameworks and best practices to grow
+              my skills.
+            </p>
+          </article>
+          <article
+            class="rounded-2xl border border-ink/10 bg-white p-6 shadow-sm"
+          >
+            <h4 class="font-display text-lg font-bold">
+              Building Practical Projects
+            </h4>
+            <p class="mt-2 text-ink/70">
+              I learn best by building. I prefer creating projects that solve
+              real problems, such as price comparison, online shopping and
+              business management, rather than only following tutorials.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="technical-skills"
+        class="mt-14 grid gap-6 border-t border-ink/10 pt-10 md:grid-cols-[13rem_1fr] md:gap-10"
+      >
+        <h3 class="font-display text-2xl font-bold tracking-tight">
+          Technical Skills
+        </h3>
+        <div class="space-y-6">
+          <div>
+            <h4
+              class="text-sm font-semibold uppercase tracking-wider text-ink/55"
+            >
+              Front-End
+            </h4>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                HTML
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                CSS
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                JavaScript
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                React
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                TypeScript
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-sm font-semibold uppercase tracking-wider text-ink/55"
+            >
+              Programming
+            </h4>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                Python
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-sm font-semibold uppercase tracking-wider text-ink/55"
+            >
+              Tools and Workflow
+            </h4>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                Git
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                GitHub
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="education"
+        class="mt-14 grid gap-6 border-t border-ink/10 pt-10 md:grid-cols-[13rem_1fr] md:gap-10"
+      >
+        <h3 class="font-display text-2xl font-bold tracking-tight">
+          Training and Education
+        </h3>
+        <div class="min-w-0">
+          <p class="text-ink/70">
+            I have completed training through the following programs:
+          </p>
+
+          <div
+            class="mt-5 overflow-x-auto rounded-2xl border border-ink/10 bg-white shadow-sm"
+          >
+            <table class="w-full min-w-[30rem] text-left text-sm sm:text-base">
+              <caption
+                class="border-b border-ink/10 bg-ink/[0.03] px-5 py-3 text-left text-sm font-semibold text-ink/70"
+              >
+                Completed training
+              </caption>
+              <thead>
+                <tr
+                  class="border-b border-ink/10 text-xs uppercase tracking-wider text-ink/55"
+                >
+                  <th scope="col" class="px-5 py-3 font-semibold">Program</th>
+                  <th scope="col" class="px-5 py-3 font-semibold">Focus</th>
+                  <th scope="col" class="px-5 py-3 font-semibold">Status</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-ink/10">
+                <tr>
+                  <th scope="row" class="px-5 py-4 font-semibold">
+                    TBC IT Academy
+                  </th>
+                  <td class="px-5 py-4 text-ink/75">
+                    Programming and web development
+                  </td>
+                  <td class="px-5 py-4">
+                    <span
+                      class="rounded-full bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-800"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="px-5 py-4 font-semibold">AlgoUni</th>
+                  <td class="px-5 py-4 text-ink/75">
+                    Programming and problem solving
+                  </td>
+                  <td class="px-5 py-4">
+                    <span
+                      class="rounded-full bg-emerald-100 px-3 py-1 text-sm font-medium text-emerald-800"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="goals"
+        class="mt-14 grid gap-6 border-t border-ink/10 pt-10 md:grid-cols-[13rem_1fr] md:gap-10"
+      >
+        <h3 class="font-display text-2xl font-bold tracking-tight">
+          My Goals as a Developer
+        </h3>
+        <div>
+          <ol class="space-y-4 [counter-reset:goal]">
+            <li
+              class="flex items-start gap-4 [counter-increment:goal] before:grid before:size-8 before:shrink-0 before:place-items-center before:rounded-full before:bg-accent before:text-sm before:font-bold before:text-white before:content-[counter(goal)]"
+            >
+              <span class="pt-0.5 text-ink/80"
+                >Grow from a junior into a confident, professional front-end
+                developer.</span
+              >
+            </li>
+            <li
+              class="flex items-start gap-4 [counter-increment:goal] before:grid before:size-8 before:shrink-0 before:place-items-center before:rounded-full before:bg-accent before:text-sm before:font-bold before:text-white before:content-[counter(goal)]"
+            >
+              <span class="pt-0.5 text-ink/80"
+                >Master React and TypeScript and build large, well-organized
+                applications.</span
+              >
+            </li>
+            <li
+              class="flex items-start gap-4 [counter-increment:goal] before:grid before:size-8 before:shrink-0 before:place-items-center before:rounded-full before:bg-accent before:text-sm before:font-bold before:text-white before:content-[counter(goal)]"
+            >
+              <span class="pt-0.5 text-ink/80"
+                >Write clean, accessible and maintainable code that follows best
+                practices.</span
+              >
+            </li>
+            <li
+              class="flex items-start gap-4 [counter-increment:goal] before:grid before:size-8 before:shrink-0 before:place-items-center before:rounded-full before:bg-accent before:text-sm before:font-bold before:text-white before:content-[counter(goal)]"
+            >
+              <span class="pt-0.5 text-ink/80"
+                >Join a professional team, learn from experienced developers and
+                contribute to real products.</span
+              >
+            </li>
+            <li
+              class="flex items-start gap-4 [counter-increment:goal] before:grid before:size-8 before:shrink-0 before:place-items-center before:rounded-full before:bg-accent before:text-sm before:font-bold before:text-white before:content-[counter(goal)]"
+            >
+              <span class="pt-0.5 text-ink/80"
+                >Keep building practical projects and share my work with the
+                community.</span
+              >
+            </li>
+          </ol>
+
+          <details
+            class="group mt-8 rounded-2xl border border-ink/10 bg-white p-5 shadow-sm open:border-accent/40"
+          >
+            <summary
+              class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold marker:content-none [&::-webkit-details-marker]:hidden"
+            >
+              A little more about my mindset
+              <span
+                class="text-accent transition-transform group-open:rotate-45"
+                aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p class="mt-3 text-ink/70">
+              I believe that good developers never stop learning. Every project,
+              every bug and every code review is a chance to improve, and I
+              intend to keep growing with each one.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <aside class="mx-auto w-full max-w-5xl px-4 pb-14 sm:px-6">
+      <div class="rounded-3xl bg-ink p-8 text-paper sm:p-10">
+        <h2 class="font-display text-2xl font-bold tracking-tight">
+          Want to Know More?
+        </h2>
+        <p class="mt-3 max-w-xl text-paper/75">
+          See what I have built on the
+          <a
+            href="projects.html"
+            class="font-medium text-accent-soft underline decoration-accent underline-offset-4 hover:text-white transition-colors"
+            >Projects</a
+          >
+          page, or
+          <a
+            href="contact.html"
+            class="font-medium text-accent-soft underline decoration-accent underline-offset-4 hover:text-white transition-colors"
+            >contact me</a
+          >
+          directly.
+        </p>
+      </div>
+    </aside>
+
+    <footer class="border-t border-ink/10">
+      <div
+        class="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6"
+      >
+        <nav aria-label="Footer navigation">
+          <ul class="flex flex-wrap gap-x-6 gap-y-2">
+            <li>
+              <a
+                href="index.html"
+                class="text-sm font-medium text-ink/70 hover:text-ink"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-sm font-medium text-accent-deep"
+                aria-current="page"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="text-sm font-medium text-ink/70 hover:text-ink"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-sm font-medium text-ink/70 hover:text-ink"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="text-sm text-ink/60">
+          <small>&copy; 2026 Andria Dididze. All rights reserved.</small>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

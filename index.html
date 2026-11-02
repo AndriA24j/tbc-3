@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Andria Dididze, Junior Front-End Developer from Georgia."
+    />
+    <title>Andria Dididze | Junior Front-End Developer - Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11/dist/index.global.js"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-display:
+          "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+        --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+        --color-paper: #faf7f2;
+        --color-ink: #1c1b18;
+        --color-accent: #e0501b;
+        --color-accent-deep: #b43a0d;
+        --color-accent-soft: #fde9dd;
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-paper font-sans text-ink antialiased selection:bg-accent selection:text-white"
+  >
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"
+      >Skip to content</a
+    >
+
+    <header
+      class="border-b border-ink/10 bg-paper/90 backdrop-blur sticky top-0 z-40"
+    >
+      <div
+        class="mx-auto max-w-5xl px-4 py-4 sm:px-6 md:flex md:items-center md:justify-between md:gap-6"
+      >
+        <div class="flex items-center justify-between gap-4">
+          <div class="flex flex-wrap items-baseline gap-x-3">
+            <h1 class="font-display text-xl font-extrabold tracking-tight">
+              Andria Dididze
+            </h1>
+            <p class="text-sm text-ink/60">
+              <span
+                class="mr-2 inline-block size-1.5 rounded-full bg-accent align-middle"
+              ></span
+              >Junior Front-End Developer
+            </p>
+          </div>
+
+          <!-- Burger button (visible below md) -->
+          <button
+            id="menu-toggle"
+            type="button"
+            class="group -mr-2 inline-flex size-11 shrink-0 items-center justify-center rounded-full text-ink transition-colors hover:bg-ink/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent md:hidden"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Open menu"
+          >
+            <span class="flex w-6 flex-col gap-[5px]" aria-hidden="true">
+              <span
+                class="h-0.5 w-full origin-center rounded-full bg-current transition-transform duration-300 group-aria-expanded:translate-y-[7px] group-aria-expanded:rotate-45"
+              ></span>
+              <span
+                class="h-0.5 w-full rounded-full bg-current transition-opacity duration-200 group-aria-expanded:opacity-0"
+              ></span>
+              <span
+                class="h-0.5 w-full origin-center rounded-full bg-current transition-transform duration-300 group-aria-expanded:-translate-y-[7px] group-aria-expanded:-rotate-45"
+              ></span>
+            </span>
+          </button>
+        </div>
+
+        <nav
+          id="site-nav"
+          class="mt-3 hidden md:mt-0 md:block"
+          aria-label="Main navigation"
+        >
+          <ul class="flex flex-col gap-1 md:flex-row md:flex-wrap">
+            <li>
+              <a
+                href="index.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors bg-ink text-paper"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors text-ink/75 hover:bg-ink/5 hover:text-ink"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors text-ink/75 hover:bg-ink/5 hover:text-ink"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors text-ink/75 hover:bg-ink/5 hover:text-ink"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main
+      id="main"
+      class="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-6 sm:py-14"
+    >
+      <section
+        id="welcome"
+        class="grid items-center gap-10 md:grid-cols-[auto_1fr] md:gap-14"
+      >
+        <figure class="mx-auto md:mx-0">
+          <img
+            src="https://placehold.co/300x300?text=Andria+Dididze"
+            alt="Profile photo placeholder of Andria Dididze"
+            width="300"
+            height="300"
+            class="size-56 rounded-3xl object-cover ring-1 ring-ink/10 shadow-[10px_10px_0_0_var(--color-accent)] sm:size-72"
+          />
+          <figcaption
+            class="mt-8 max-w-[18rem] text-center text-sm text-ink/60 md:text-left"
+          >
+            Andria Dididze, Junior Front-End Developer
+          </figcaption>
+        </figure>
+
+        <div>
+          <h2
+            class="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-balance sm:text-5xl lg:text-6xl"
+          >
+            Welcome to My Portfolio
+          </h2>
+
+          <p class="mt-6 text-lg leading-relaxed text-ink/80">
+            Hello, and thank you for visiting! I am
+            <strong class="font-semibold text-ink">Andria Dididze</strong>, a
+            Junior Front-End Developer from Georgia.
+          </p>
+          <p class="mt-4 leading-relaxed text-ink/70">
+            I am passionate about web development and enjoy turning ideas into
+            clean, accessible and practical websites and web applications. I am
+            always learning new technologies, and I love building projects that
+            solve real problems for real people.
+          </p>
+
+          <blockquote class="mt-8 border-l-4 border-accent pl-5">
+            <p class="font-display text-xl font-semibold italic leading-snug">
+              Every great website starts with clean, well-structured HTML.
+            </p>
+          </blockquote>
+
+          <p class="mt-8 leading-relaxed text-ink/80">
+            Take a look at
+            <a
+              href="projects.html"
+              class="font-medium text-accent-deep underline decoration-accent/40 underline-offset-4 hover:decoration-accent transition-colors"
+              >my projects</a
+            >, learn more
+            <a
+              href="about.html"
+              class="font-medium text-accent-deep underline decoration-accent/40 underline-offset-4 hover:decoration-accent transition-colors"
+              >about me</a
+            >, or
+            <a
+              href="contact.html"
+              class="font-medium text-accent-deep underline decoration-accent/40 underline-offset-4 hover:decoration-accent transition-colors"
+              >get in touch</a
+            >
+            if you would like to work together.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="mt-20 border-t border-ink/10 pt-14">
+        <h2
+          class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-balance"
+        >
+          My Main Skills
+        </h2>
+        <p class="mt-3 text-ink/70">
+          These are the technologies and tools I work with most often:
+        </p>
+
+        <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <li>
+            <article
+              class="h-full rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3
+                class="font-display text-2xl font-bold tracking-tight flex items-center gap-2"
+              >
+                <span class="size-2 rounded-full bg-accent"></span>HTML
+              </h3>
+              <p class="mt-2 text-ink/70">
+                Semantic, accessible and well-structured page markup.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article
+              class="h-full rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3
+                class="font-display text-2xl font-bold tracking-tight flex items-center gap-2"
+              >
+                <span class="size-2 rounded-full bg-accent"></span>CSS
+              </h3>
+              <p class="mt-2 text-ink/70">
+                Responsive layouts and clean, maintainable styling.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article
+              class="h-full rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3
+                class="font-display text-2xl font-bold tracking-tight flex items-center gap-2"
+              >
+                <span class="size-2 rounded-full bg-accent"></span>JavaScript
+              </h3>
+              <p class="mt-2 text-ink/70">
+                Interactive and dynamic user interfaces.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article
+              class="h-full rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3
+                class="font-display text-2xl font-bold tracking-tight flex items-center gap-2"
+              >
+                <span class="size-2 rounded-full bg-accent"></span>React
+              </h3>
+              <p class="mt-2 text-ink/70">
+                Component-based front-end applications.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article
+              class="h-full rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3
+                class="font-display text-2xl font-bold tracking-tight flex items-center gap-2"
+              >
+                <span class="size-2 rounded-full bg-accent"></span>TypeScript
+              </h3>
+              <p class="mt-2 text-ink/70">
+                Safer, more predictable and scalable JavaScript code.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article
+              class="h-full rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3
+                class="font-display text-2xl font-bold tracking-tight flex items-center gap-2"
+              >
+                <span class="size-2 rounded-full bg-accent"></span>Python
+              </h3>
+              <p class="mt-2 text-ink/70">
+                Scripting, automation and problem solving.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article
+              class="h-full rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3
+                class="font-display text-2xl font-bold tracking-tight flex items-center gap-2"
+              >
+                <span class="size-2 rounded-full bg-accent"></span>Git / GitHub
+              </h3>
+              <p class="mt-2 text-ink/70">
+                Version control and collaborative development.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="explore" class="mt-20 border-t border-ink/10 pt-14">
+        <h2
+          class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-balance"
+        >
+          Explore the Website
+        </h2>
+        <ul class="mt-8 divide-y divide-ink/10 border-y border-ink/10">
+          <li class="py-4">
+            <a
+              href="projects.html"
+              class="group flex flex-wrap items-baseline justify-between gap-x-6"
+              ><span
+                class="font-display text-xl font-bold group-hover:text-accent-deep transition-colors"
+                >View my Projects
+                <span
+                  class="inline-block transition-transform group-hover:translate-x-1"
+                  >&rarr;</span
+                ></span
+              ><span class="text-ink/60">see what I have built.</span></a
+            >
+          </li>
+          <li class="py-4">
+            <a
+              href="about.html"
+              class="group flex flex-wrap items-baseline justify-between gap-x-6"
+              ><span
+                class="font-display text-xl font-bold group-hover:text-accent-deep transition-colors"
+                >Read About Me
+                <span
+                  class="inline-block transition-transform group-hover:translate-x-1"
+                  >&rarr;</span
+                ></span
+              ><span class="text-ink/60"
+                >my background, training and goals.</span
+              ></a
+            >
+          </li>
+          <li class="py-4">
+            <a
+              href="contact.html"
+              class="group flex flex-wrap items-baseline justify-between gap-x-6"
+              ><span
+                class="font-display text-xl font-bold group-hover:text-accent-deep transition-colors"
+                >Contact me
+                <span
+                  class="inline-block transition-transform group-hover:translate-x-1"
+                  >&rarr;</span
+                ></span
+              ><span class="text-ink/60"
+                >send a message or find me online.</span
+              ></a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <aside class="mx-auto w-full max-w-5xl px-4 pb-14 sm:px-6">
+      <div class="rounded-3xl bg-ink p-8 text-paper sm:p-10">
+        <h2 class="font-display text-2xl font-bold tracking-tight">
+          Quick Facts
+        </h2>
+        <ul class="mt-6 grid gap-x-10 sm:grid-cols-2">
+          <li class="flex gap-3 border-b border-paper/15 py-3">
+            <strong class="w-24 shrink-0 font-medium text-paper/55"
+              >Name:</strong
+            >
+            Andria Dididze
+          </li>
+          <li class="flex gap-3 border-b border-paper/15 py-3">
+            <strong class="w-24 shrink-0 font-medium text-paper/55"
+              >Role:</strong
+            >
+            Junior Front-End Developer
+          </li>
+          <li class="flex gap-3 border-b border-paper/15 py-3">
+            <strong class="w-24 shrink-0 font-medium text-paper/55"
+              >Location:</strong
+            >
+            Georgia
+          </li>
+          <li class="flex gap-3 border-b border-paper/15 py-3">
+            <strong class="w-24 shrink-0 font-medium text-paper/55"
+              >Focus:</strong
+            >
+            Front-end web development
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <footer class="border-t border-ink/10">
+      <div
+        class="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6"
+      >
+        <nav aria-label="Footer navigation">
+          <ul class="flex flex-wrap gap-x-6 gap-y-2">
+            <li>
+              <a
+                href="index.html"
+                class="text-sm font-medium text-accent-deep"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-sm font-medium text-ink/70 hover:text-ink"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="text-sm font-medium text-ink/70 hover:text-ink"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-sm font-medium text-ink/70 hover:text-ink"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="text-sm text-ink/60">
+          <small>&copy; 2026 Andria Dididze. All rights reserved.</small>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var toggle = document.getElementById("menu-toggle");
+        var nav = document.getElementById("site-nav");
+        var desktop = window.matchMedia("(min-width: 48rem)"); // Tailwind md
+
+        function setOpen(open) {
+          nav.classList.toggle("hidden", !open);
+          toggle.setAttribute("aria-expanded", String(open));
+          toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+        }
+
+        toggle.addEventListener("click", function () {
+          setOpen(toggle.getAttribute("aria-expanded") !== "true");
+        });
+
+        // Close after choosing a link
+        nav.addEventListener("click", function (e) {
+          if (e.target.closest("a")) setOpen(false);
+        });
+
+        // Close with Escape and return focus to the button
+        document.addEventListener("keydown", function (e) {
+          if (
+            e.key === "Escape" &&
+            toggle.getAttribute("aria-expanded") === "true"
+          ) {
+            setOpen(false);
+            toggle.focus();
+          }
+        });
+
+        // Reset when resizing up to the desktop layout
+        desktop.addEventListener("change", function (e) {
+          if (e.matches) setOpen(false);
+        });
+      })();
+    </script>
+  </body>
+</html>

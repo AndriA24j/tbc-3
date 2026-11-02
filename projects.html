@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio projects by Andria Dididze, Junior Front-End Developer."
+    />
+    <title>Projects | Andria Dididze - Junior Front-End Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11/dist/index.global.js"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-display:
+          "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+        --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+        --color-paper: #faf7f2;
+        --color-ink: #1c1b18;
+        --color-accent: #e0501b;
+        --color-accent-deep: #b43a0d;
+        --color-accent-soft: #fde9dd;
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-paper font-sans text-ink antialiased selection:bg-accent selection:text-white"
+  >
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"
+      >Skip to content</a
+    >
+
+    <header
+      class="border-b border-ink/10 bg-paper/90 backdrop-blur sticky top-0 z-40"
+    >
+      <div
+        class="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6"
+      >
+        <div class="flex items-baseline gap-3">
+          <h1 class="font-display text-xl font-extrabold tracking-tight">
+            Andria Dididze
+          </h1>
+          <p class="text-sm text-ink/60">
+            <span
+              class="mr-2 inline-block size-1.5 rounded-full bg-accent align-middle"
+            ></span
+            >Junior Front-End Developer
+          </p>
+        </div>
+        <nav
+          id="site-nav"
+          class="mt-3 hidden md:mt-0 md:block"
+          aria-label="Main navigation"
+        >
+          <ul class="flex flex-col gap-1 md:flex-row md:flex-wrap">
+            <li>
+              <a
+                href="index.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors bg-ink text-paper"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors text-ink/75 hover:bg-ink/5 hover:text-ink"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors text-ink/75 hover:bg-ink/5 hover:text-ink"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block rounded-full px-4 py-2 text-sm font-medium transition-colors text-ink/75 hover:bg-ink/5 hover:text-ink"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main
+      id="main"
+      class="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-6 sm:py-14"
+    >
+      <h2
+        class="font-display text-4xl font-extrabold tracking-tight sm:text-5xl"
+      >
+        My Projects
+      </h2>
+      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-ink/75">
+        Here are some of the projects I have worked on. Each one helped me
+        practise new skills and solve a real-world problem.
+      </p>
+
+      <section id="project-list" class="mt-12">
+        <h3 class="sr-only">Portfolio Projects</h3>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article
+            id="priceradar-georgia"
+            class="flex flex-col rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <h4 class="font-display text-2xl font-bold tracking-tight">
+              PriceRadar Georgia
+            </h4>
+            <p class="mt-3 text-ink/75">
+              A technology price comparison platform that helps users in Georgia
+              find the best prices for electronics and gadgets across different
+              online stores in one place.
+            </p>
+            <h5
+              class="mt-6 text-sm font-semibold uppercase tracking-wider text-ink/55"
+            >
+              Technologies Used
+            </h5>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                React
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                TypeScript
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                JavaScript
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                Python
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                Git / GitHub
+              </li>
+            </ul>
+            <p class="mt-auto pt-6">
+              Project link:
+              <a
+                href="#"
+                class="font-medium text-accent-deep underline decoration-accent/40 underline-offset-4 hover:decoration-accent transition-colors"
+                >PriceRadar Georgia (link placeholder)</a
+              >
+            </p>
+          </article>
+          <article
+            id="audiophile-store"
+            class="flex flex-col rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <h4 class="font-display text-2xl font-bold tracking-tight">
+              Audiophile Store
+            </h4>
+            <p class="mt-3 text-ink/75">
+              An online technology store for audio equipment such as headphones,
+              speakers and accessories, featuring product listings, product
+              details and a shopping experience.
+            </p>
+            <h5
+              class="mt-6 text-sm font-semibold uppercase tracking-wider text-ink/55"
+            >
+              Technologies Used
+            </h5>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                HTML
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                CSS
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                JavaScript
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                React
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                Git / GitHub
+              </li>
+            </ul>
+            <p class="mt-auto pt-6">
+              Project link:
+              <a
+                href="#"
+                class="font-medium text-accent-deep underline decoration-accent/40 underline-offset-4 hover:decoration-accent transition-colors"
+                >Audiophile Store (link placeholder)</a
+              >
+            </p>
+          </article>
+          <article
+            id="onima-management-system"
+            class="flex flex-col rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <h4 class="font-display text-2xl font-bold tracking-tight">
+              Onima Management System
+            </h4>
+            <p class="mt-3 text-ink/75">
+              A business management application for organising day-to-day
+              operations, such as managing records, tracking information and
+              keeping business data in one clear interface.
+            </p>
+            <h5
+              class="mt-6 text-sm font-semibold uppercase tracking-wider text-ink/55"
+            >
+              Technologies Used
+            </h5>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                React
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                TypeScript
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                Python
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                Git / GitHub
+              </li>
+            </ul>
+            <p class="mt-auto pt-6">
+              Project link:
+              <a
+                href="#"
+                class="font-medium text-accent-deep underline decoration-accent/40 underline-offset-4 hover:decoration-accent transition-colors"
+                >Onima Management System (link placeholder)</a
+              >
+            </p>
+          </article>
+          <article
+            id="personal-portfolio-website"
+            class="flex flex-col rounded-2xl border border-ink/10 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <h4 class="font-display text-2xl font-bold tracking-tight">
+              Personal Portfolio Website
+            </h4>
+            <p class="mt-3 text-ink/75">
+              My own portfolio website, which presents who I am, what I know and
+              what I have built. This version is a multi-page website written
+              with semantic HTML5.
+            </p>
+            <h5
+              class="mt-6 text-sm font-semibold uppercase tracking-wider text-ink/55"
+            >
+              Technologies Used
+            </h5>
+            <ul class="mt-3 flex flex-wrap gap-2">
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                HTML5
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                CSS
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                JavaScript
+              </li>
+              <li
+                class="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-deep"
+              >
+                Git / GitHub
+              </li>
+            </ul>
+            <p class="mt-auto pt-6">
+              Project link:
+              <a
+                href="index.html"
+                class="font-medium text-accent-deep underline decoration-accent/40 underline-offset-4 hover:decoration-accent transition-colors"
+                >Personal Portfolio Website (this site)</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="summary" class="mt-20 border-t border-ink/10 pt-14">
+        <h3
+          class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-balance"
+        >
+          Projects at a Glance
+        </h3>
+        <div
+          class="mt-8 overflow-x-auto rounded-2xl border border-ink/10 bg-white shadow-sm"
+        >
+          <table class="w-full min-w-[34rem] text-left text-sm sm:text-base">
+            <caption
+              class="border-b border-ink/10 bg-ink/[0.03] px-5 py-3 text-left text-sm font-semibold text-ink/70"
+            >
+              Summary of portfolio projects
+            </caption>
+            <thead>
+              <tr
+                class="border-b border-ink/10 text-xs uppercase tracking-wider text-ink/55"
+              >
+                <th scope="col" class="px-5 py-3 font-semibold">Project</th>
+                <th scope="col" class="px-5 py-3 font-semibold">Type</th>
+                <th scope="col" class="px-5 py-3 font-semibold">
+                  Main Technologies
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-ink/10">
+              <tr class="hover:bg-accent-soft/40 transition-colors">
+                <th scope="row" class="px-5 py-4 font-semibold">
+                  PriceRadar Georgia
+                </th>
+                <td class="px-5 py-4 text-ink/75">Price comparison platform</td>
+                <td class="px-5 py-4 text-ink/75">React, TypeScript, Python</td>
+              </tr>
+              <tr class="hover:bg-accent-soft/40 transition-colors">
+                <th scope="row" class="px-5 py-4 font-semibold">
+                  Audiophile Store
+                </th>
+                <td class="px-5 py-4 text-ink/75">Online technology store</td>
+                <td class="px-5 py-4 text-ink/75">
+                  HTML, CSS, JavaScript, React
+                </td>
+              </tr>
+              <tr class="hover:bg-accent-soft/40 transition-colors">
+                <th scope="row" class="px-5 py-4 font-semibold">
+                  Onima Management System
+                </th>
+                <td class="px-5 py-4 text-ink/75">
+                  Business management application
+                </td>
+                <td class="px-5 py-4 text-ink/75">React, TypeScript, Python</td>
+              </tr>
+              <tr class="hover:bg-accent-soft/40 transition-colors">
+                <th scope="row" class="px-5 py-4 font-semibold">
+                  Personal Portfolio Website
+                </th>
+                <td class="px-5 py-4 text-ink/75">Portfolio website</td>
+                <td class="px-5 py-4 text-ink/75">HTML5, CSS, JavaScript</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <aside class="mx-auto w-full max-w-5xl px-4 pb-14 sm:px-6">
+      <div class="rounded-3xl bg-ink p-8 text-paper sm:p-10">
+        <h2 class="font-display text-2xl font-bold tracking-tight">
+          Interested in My Work?
+        </h2>
+        <p class="mt-3 max-w-xl text-paper/75">
+          I would be happy to talk about any of these projects. Please
+          <a
+            href="contact.html"
+            class="font-medium text-accent-soft underline decoration-accent underline-offset-4 hover:text-white transition-colors"
+            >get in touch</a
+          >
+          or read
+          <a
+            href="about.html"
+            class="font-medium text-accent-soft underline decoration-accent underline-offset-4 hover:text-white transition-colors"
+            >more about me</a
+          >.
+        </p>
+      </div>
+    </aside>
+
+    <footer class="border-t border-ink/10">
+      <div
+        class="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6"
+      >
+        <nav aria-label="Footer navigation">
+          <ul class="flex flex-wrap gap-x-6 gap-y-2">
+            <li>
+              <a
+                href="index.html"
+                class="text-sm font-medium text-ink/70 hover:text-ink"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-sm font-medium text-ink/70 hover:text-ink"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="text-sm font-medium text-accent-deep"
+                aria-current="page"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-sm font-medium text-ink/70 hover:text-ink"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="text-sm text-ink/60">
+          <small>&copy; 2026 Andria Dididze. All rights reserved.</small>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
